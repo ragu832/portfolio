@@ -7,3 +7,4 @@ document.addEventListener("click", function (event) {
     document.getElementById("themeStylesheet").setAttribute("href", themeFile);
   }
 });
+

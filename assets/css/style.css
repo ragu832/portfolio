@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
 
-/* Global variables */
-:root {
-  --primary: #12bdff;
-  --primary-hover: #0c8ec2;
-  --dark-primary: #1b1f24;
-}
 
 * {
   margin: 0;
@@ -33,13 +27,6 @@ header {
   z-index: 1;
 }
 
-/* header .logo {
-  color: var(--primary);
-  margin-right: 130px;
-  font-weight: 600;
-  letter-spacing: 2px;
-} */
-
 header ul {
   display: flex;
   list-style: none;
@@ -58,13 +45,15 @@ header ul li a {
 }
 
 header ul li a:hover {
-  color: var(--primary);
   transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 /* Hero Section */
 section.hero-section {
-  background-color: var(--dark-primary);
   color: #fff;
   display: flex;
   align-items: center;
@@ -73,10 +62,6 @@ section.hero-section {
 
 .hero-section__title {
   font-size: 48px;
-}
-
-.hero-section__title span {
-  color: var(--primary);
 }
 
 .hero-section__desc {
@@ -99,13 +84,13 @@ ul.social-icons {
 
 .social-icons li {
   margin-right: 15px;
-  border-radius: 50%;
-  border: 1px solid var(--primary);
+  border-radius: 25%;
+  border: 1px solid white;
   padding: 8px 12px;
 }
 
 .social-icons li:hover {
-  background-color: var(--primary);
+  background-color: rgba(191, 189, 189, 0.989);
   transition: all 0.3s ease 0s;
 }
 
@@ -118,51 +103,61 @@ ul.social-icons {
 
 .hero-buttons button {
   margin-right: 10px;
+  border: 1px solid #fff;
+  border-radius: 1rem;
 }
 
 .hero-buttons button > a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
 }
+
+
 
 /* buttons */
 .btn {
   padding: 10px 20px;
-  border-radius: 2px;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
 .btn.btn-primary {
-  background-color: var(--primary);
-  color: var(--dark-primary);
   font-weight: 600;
+  background-color: white;
+  border: 1px solid white;
+
 }
 
 .btn.btn-primary:hover {
-  background-color: var(--primary-hover);
+  background-color: black;
+  color: #ffffff;
   transition: all 0.3s ease 0s;
+  border: 1px solid white;
+}
+
+.hero-buttons button:hover > a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .btn-dark-outlined {
-  background-color: var(--dark-primary);
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  background-color: white;
+  color: black;
   border-radius: 5px;
   font-weight: 600;
 }
 
 .btn-dark-outlined:hover {
   cursor: pointer;
-  background-color: var(--primary);
-  color: #fff !important;
+  background-color: black;
+  color: #ffffff !important;
   transition: all 0.3s ease 0s;
 }
 
 /* About Section */
 section.about-section {
-  background-color: #22282f;
   color: #fff;
   display: flex;
   align-items: center;
@@ -175,7 +170,7 @@ section.about-section {
   height: 250px;
   padding: 2px;
   border-radius: 50%;
-  border: 3px solid var(--primary);
+  border: 3px solid cyan;
   box-shadow: 3px 5px 30px #03506e;
   object-fit: cover;
 }
@@ -190,7 +185,7 @@ section.about-section {
 }
 
 .about-content h2 > span {
-  color: var(--primary);
+  color: cyan;
 }
 
 .about-content p {
@@ -210,7 +205,6 @@ section.about-section {
 
 /* Projects Section */
 section.projects-section {
-  background-color: var(--dark-primary);
   color: #fff;
   padding: 50px 120px;
 }
@@ -221,7 +215,7 @@ section.projects-section {
 }
 
 .projects-section h2 > span {
-  color: var(--primary);
+  color: cyan;
 }
 
 .projects-cards {
@@ -246,7 +240,7 @@ section.projects-section {
 .projects-card-box__icons > i {
   font-size: 30px;
   border-radius: 50%;
-  border: 1px solid var(--primary);
+  border: 1px solid rgb(0, 225, 255);
   padding: 20px;
 }
 
@@ -285,7 +279,6 @@ section.projects-section {
 
 /* Contact Section */
 section.contact-section {
-  background-color: #22282f;
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -297,7 +290,7 @@ section.contact-section {
 }
 
 .contact-section h2 > span {
-  color: var(--primary);
+  color: cyan;
 }
 
 .contact-section form div > input,
@@ -435,7 +428,6 @@ footer a {
 }
 /* Skill Section */
 section.skill-section {
-  background-color: var(--dark-primary);
   color: #fff;
   padding: 50px 120px;
   text-align: center;
@@ -447,7 +439,7 @@ section.skill-section {
 }
 
 .skill-section h2 > span {
-  color: var(--primary);
+  color: cyan;
 }
 
 .skill-categories {
@@ -468,7 +460,7 @@ section.skill-section {
 
 .skill-category:hover {
   transform: translateY(-5px);
-  box-shadow: 3px 5px 20px var(--primary-hover);
+  box-shadow: 3px 5px 20px blue;
 }
 
 .skill-category h3 {
@@ -502,7 +494,7 @@ section.skill-section {
   content: "";
   display: block;
   height: 100%;
-  background-color: var(--primary);
+  background-color: cyan;
   width: 0;
   animation: fillProgress 2s forwards;
 }
@@ -528,3 +520,17 @@ section.skill-section {
   }
 }
 
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Or any color of your choice */
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1; /* Ensure it stays in the background */
+}
+
+header, main, footer {
+  position: relative;
+  z-index: 1;
+}
